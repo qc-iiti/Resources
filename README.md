@@ -15,12 +15,12 @@ This repository is targeted towards beginners approaching quantum computing. Whe
 ## How this Repository is Structured
 
 The repository contains:
-- **OUR HANDBOOK**: A series of documents written by club members guiding readers in working with Quantum Computing tools efficiently. We explain
+- [**OUR HANDBOOK**](./handbook/): A series of documents written by club members guiding readers in working with Quantum Computing tools efficiently. We explain
   - The Basic Idea of Qubits
   - An Introduction to Quantum Physics & Notation
   - Basic Computer Science, and how to use Python
   - Building Circuits and Algorithms
-- **EXTERNAL RESOURCES**: A curation of resources we found and used to teach us Quantum Computing. It includes books, video tutorials, and websites.
+- [**EXTERNAL RESOURCES**](./RESOURCES.md): A curation of resources we found and used to teach us Quantum Computing. It includes books, video tutorials, and websites.
 
 
 This repository isn’t meant to replace formal coursework — it’s a launchpad.  
