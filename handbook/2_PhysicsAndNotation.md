@@ -1,32 +1,6 @@
-# 
-
-# 
-
-# 
-
-# 
-
 # **Physics And Notations**
 
-# Author: Rudra
-
-# 
-
-# 
-
-# 
-
-Link for original doc in case any font is missing in md file : https://docs.google.com/document/d/1qb_VtLV6V22Tl-3IDwL8E3O7Gb23o-BVrQFguQ4blp8/edit?usp=sharing
-
-# 
-
-# 
-
-# 
-
-# 
-
-# **A Note To Readers**
+## **A Note To Readers**
 
 We welcome you to this beautiful journey of quantum. In this section we will introduce you to some basic concepts of physics and maths required to explore our quantum world. With our experience we have given our utmost effort to make things easy and understandable in simple language. It is not a difficult glossary containing textbook but a guide written with passion.
 
@@ -34,7 +8,7 @@ Instead of introducing you to the basic math concepts we are opting for a differ
 
 All the best and keep going. Remember in quantum, your intuition can get wrong but maths can’t. So trust the calculation not your heart. 
 
-# **Contents**
+## **Contents**
 
 1. **Quantum: New Physics Season 2.O**  
    1. We have Classical Mechanics. Then why do we need Quantum Mechanics?  
@@ -43,13 +17,13 @@ All the best and keep going. Remember in quantum, your intuition can get wrong b
    2.  Can we apply Quantum Logic to Classical Problems?  
    3. Fundamentals of Quantum  
       1. Heisenberg Principle  
-      2. Multiple States at Once \- SuperPosition
+      2. Multiple States at Once -- SuperPosition
 
 2. **Qubits**  
    1. Classical Bits Vs Qubits  
    2. Quantum Computing  
-      1. How can we create a Quantum Processor  
-      2. Decoherence  
+      1. How can we create a Quantum Processor
+      2. Decoherence
    3. Notations  
       1. Psi symbol  
       2. Ket and bra notations  
@@ -104,6 +78,7 @@ But at the microscopic level, particles showed behaviors classical theory couldn
 
    **The Debate of Nature of Light (Particle Vs Wave)**  
 (Story based on real life facts, narrated like a dialogue driven story. It includes your JEE concepts only.)
+<!-- This whole thing needs to go -->
 
 Let us travel to the time when the concept of Quantum was unknown. 
 
@@ -130,6 +105,8 @@ Plank \- Yes and my quantized nature of photon energy tells that light has a par
 Plank \- It means light has DUAL nature. We have proved both nature by experiments and maths. But how is it possible for anything in this world to exist in 2 entirely different states? 
 
 De Broglie \- If light can have dual nature then other objects like electrons can also have dual nature??? It means our classical theory fails to explain everything in this world. **We have to begin Physics Season 2.O…**
+
+<!-- -->
 
 **Introduction To Quantum Mechanics**  
 **Quantum Mechanics**
@@ -193,11 +170,9 @@ But before measuring, the system is in a mix — holding both possibilities at o
 
 **Don’t worry if you don’t understand these notations as they will be explored in detail in further sections.**
 
- 
-
 # **Chapter 2** **Qubits**
 
-Qubits vs. Classical Bits  
+## Qubits vs. Classical Bits  
 
 At first glance, the term qubits may seem similar to bits, but they represent different concepts. Qubits can perform tasks that classical bits cannot achieve.  
 
@@ -244,7 +219,7 @@ Examples:
 ∣ϕ⟩=α∣0⟩+β∣1⟩ → superposition of both states  
 
 ii. Bra ⟨⋅∣     
-Represents the conjugate transpose (mirror) of a ket.    
+Represents the conjugate transpose (mirror) of a ket. <!-- FIXME: This would make no sense since you did not define that a ket is expressable as a column matrix/vector -->  
 If ∣ψ⟩ is a state, then its bra is ⟨ψ∣.  
 
 iii. Bra-Ket ⟨⋅∣⋅⟩    
@@ -294,7 +269,7 @@ U \= H ⊗ I \=
 
 This setup ensures only the selected qubit changes while the others stay the same.
 
-2.2 Two-Qubit Gates
+2.2 Two-Qubit Gates <!-- Doesn't make sense to introduce here since gates are detailed below right? Especially with Kronecker products -->
 
 Some operations need two qubits. These gates create correlations or entanglement between qubits.  
 Controlled-NOT (CNOT): Flips the second qubit (target) only if the first qubit (control) is in |1⟩.
@@ -369,7 +344,7 @@ These correlations cannot be explained by classical means.
 
 4\. Bell States
 
-The Bell states are a unique set of maximally entangled two-qubit states. They create an orthonormal basis for the two-qubit Hilbert space and play a key role in quantum information science.
+The Bell states are a unique set of maximally entangled two-qubit states. They create an orthonormal <!-- how would this make sense without the vectorial intuition --> basis for the two-qubit Hilbert space and play a key role in quantum information science.
 
 4.1 The Four Bell States    
 ∣Φ+⟩ \= 1/√2 (∣00⟩ \+ ∣11⟩),    
@@ -377,7 +352,7 @@ The Bell states are a unique set of maximally entangled two-qubit states. They c
 ∣Ψ+⟩ \= 1/√2 (∣01⟩ \+ ∣10⟩),    
 ∣Ψ−⟩ \= 1/√2 (∣01⟩ − ∣10⟩)  
 
-Each of these states shows perfect correlations or anti-correlations between the two qubits, depending on the measurement basis.
+Each of these states shows perfect correlations or anti-correlations <!-- NOTE: was correlation discussed? --> between the two qubits, depending on the measurement basis.
 
 4.2 Construction of a Bell State  
 
@@ -411,7 +386,7 @@ Every time you use a classical computer, whether to send an email, play a game, 
 
 In the same way, quantum computers have their own fundamental building blocks: quantum gates. These gates, however, operate not on bits, but on qubits, the quantum equivalent of a classical bit. By manipulating qubits, these gates unlock the powerful phenomena of the quantum world, such as superposition and entanglement, to perform computations.
 
-Interesting Fact \- Have you ever wondered can we reverse the classical gates. Take And gate for example, If after applying gate, I got 0 then can I know for sure are original bits were (0,0) or (0,1) or (1,0). No right ? I can not be sure. But In case of Not gate I am sure… 
+Interesting Fact \- Have you ever wondered can we reverse the classical gates. Take the `AND` gate for example, If after applying gate, I get a `0` then can I know for sure are original bits were (0,0) or (0,1) or (1,0). No right ? I can not be sure. But In case of `NOT` gate I am sure... <!-- TODO: rewrite --> 
 
 But in quantum world, gates must be reversible i.e I can obtain original qubit from result. But why is this? Are gates made in such way? So answer is it is a mathematical necessity. As Ranco will say from 3 idiots would say \- Quantum ki duniya mei intuition ke peche mat bhago, maths ka peecha karo, sare jawab jhak marke khud tumhare peeche ayenge…. I mean only maths can answers our questions as maths is language of this world.
 
@@ -419,7 +394,7 @@ So lets dive into how quantum gates can be modeled in form of matrices and there
 
 # **How can we apply Gates to Qubits**
 
-Note \- Please Paste below code in latex for showing of all symbols and matrices:
+Note \- Please Paste below code in latex for showing of all symbols and matrices: <!-- FIXME: what the actual fuck -->
 
 —Code begins—  
 \\documentclass{article}  
