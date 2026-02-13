@@ -1,13 +1,3 @@
-# The Basics
-
-## Overview
-
-Quantum Computing is an exciting and rapidly evolving field that lies at the intersection of physics, computer science, mathematics, and engineering. This handbook is to serve as a beginner-friendly yet structured guide for students who are curious about quantum computing and want a clear starting point.
-
-Whether you are completely new or have some background, this guide aims to reduce the initial learning curve and help you navigate the vast quantum ecosystem.
-
----
-
 ## Contents
 
 1. What is a Qubit?
@@ -64,7 +54,7 @@ $$
 \alpha|0\rangle + \beta|1\rangle
 $$
 
-The shear capacity of such a system to store information will be made obvious in just a moment. First lets adress $\alpha$ and $\beta$. The issue with having superpositions of discrete "incompatable" states is that when measuring these states, the superposition collapses. $|\alpha|^2$ and $|\beta|^2$ correspond to the probabilities of obtaining $|0\rangle$ and $|1\rangle$ respectively, with $\alpha, \beta \in \Complex$. The remarkable capacity of quantum computers to hold information comes from these coefficients. You can encode information in quantum computers via the bitstring itself $|0101\rangle = |5\rangle$, or in the coefficients via amplitude (which of $|\alpha|^2, |\beta|^2$, etc. are the largerst), or via phase ($\beta = e^{i\theta}\alpha$ implies same amplitude, but different kinds of interaction during processes). That is, each qubit, has *two real* degrees of freedom, since the normalisation constraint forces $\cos{\frac{\theta}{2}}|0\rangle + e^{i\phi}\sin{\frac{\theta}{2}} |1\rangle$. These coefficients in a sense have infinite resolution. While extracting that information via measurement is theoretically impossible, algorithms make use of their interaction before measurement to perform computation.
+The shear capacity of such a system to store information will be made obvious in just a moment. First lets adress $\alpha$ and $\beta$. The issue with having superpositions of discrete "incompatable" states is that when measuring these states, the superposition collapses. $|\alpha|^2$ and $|\beta|^2$ correspond to the probabilities of obtaining $|0\rangle$ and $|1\rangle$ respectively, with $\alpha, \beta \in \mathbb{C}$. The remarkable capacity of quantum computers to hold information comes from these coefficients. You can encode information in quantum computers via the bitstring itself $|0101\rangle = |5\rangle$, or in the coefficients via amplitude (which of $|\alpha|^2, |\beta|^2$, etc. are the largerst), or via phase ($\beta = e^{i\theta}\alpha$ implies same amplitude, but different kinds of interaction during processes). That is, each qubit, has *two real* degrees of freedom, since the normalisation constraint forces $\cos{\frac{\theta}{2}}|0\rangle + e^{i\phi}\sin{\frac{\theta}{2}} |1\rangle$. These coefficients in a sense have infinite resolution. While extracting that information via measurement is theoretically impossible, algorithms make use of their interaction before measurement to perform computation.
 
 As you read further in our Handbook, the notation, the underlying physics, and the underlying algorithms will all become much more clearer as they are explained in depth. We don't expect you to catch every detail reading this right now, but keeping this in the back of your mind may help you reason about how one *thinks* while working with quantum algorithms.
 
@@ -98,5 +88,12 @@ Additionally, since Python is an interpreted language, it is also fundamentally 
 
 As you learn more about quantum computing, you may or may not need to engage with the software surrounding algorithms in quantum computing. But, such designing such software is a real part of the industry, so general awareness should not be neglected and it produces one more avenue for a career in QC.
 
+# Git
 
+Using Git may not be a priority for you right now, but having some understanding of it is critical for navigating this repository. *This repository is a Git repository*, and is hosted on *GitHub*. 
 
+Git is version control software. It allows us to track changes, manage versions, and collaboratively write this Handbook with multiple club members as authors, as well as to mantain proper attribution of authorship over time in a permament way. This is not your concern as a reader, but if ever you plan to contribute as a member, this is how this Handbook *works*.
+
+GitHub is a website that hosts Git repositories. For you as a reader, it offers two simple functionalities. The first is rendering: these files are fundamentally plaintext files, but GitHub renders these into formatted documents on desktop browsers. The second, most important function, is the ability to report `Issues`. If you notice a typo, an error, a mistake, a broken link, create an Issue and let us know. 
+
+Rasiing issues via GitHub is programming socials 101.
